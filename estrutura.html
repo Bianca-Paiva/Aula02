@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Titulo da página</title>
+
+</head>
+
+<body style="font-family: Arial;">
+    <header>
+        <h1 style="color: #8b0000; font-size: 32px;">Título principal</h1>
+    </header>
+
+    <!-- Fomulários -->
+    <form action="/cadastro" method="post" return="false"
+        onsubmit="alert('Formulário enviado' + ' ' + document.getElementById('nome').value);">
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu email">
+
+        <input type="number" min="18" max="95" name="idade" id="idade">
+
+        <input type="tel" name="telefone" id="telefone" placeholder="(11) 999910-0208">
+
+        <input type="color" name="color" id="color">
+
+        <input type="range" min="0" max="100" value="10" name="volume" id="volume">
+
+        <input type="file" name="arquivo" id="arquivo" value="Enviar arquivo">
+        <br><br>
+
+        <input type="checkbox" name="aceito" id="aceito">
+        <label for="aceito">Aceitos os termos</label>
+
+        <br><br>
+        <input type="radio" name="genero" id="feminino" value="feminino">
+        <label for="feminino">Feminino</label>
+
+        <input type="radio" name="genero" id="masculino" value="masculino">
+        <label for="masculino">Masculino</label>
+
+        <br><br>
+
+        <input type="reset" value="Reset">
+
+        <br><br>
+
+        <label for="cidade">Cidade: </label>
+        <select name="cidade" id="cidade">
+            <option value="">Selecione...</option>
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="es">Espírito Santo</option>
+            <option value="bh">Belo Horizonte</option>
+            <option value="ba">Bahia</option>
+        </select>
+
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <form action="/login" method="post" autocomplete="on" novalidate>
+        <label for="login">Login:</label>
+        <input type="text" name="login" id="login" required>
+
+        <label for="password">Senha:</label>
+        <input type="password" name="password" id="password" required>
+
+        <input type="submit" value="Realizar login">
+    </form>
+
+    <h2>Subtítulo 2</h2>
+    <h3>Subtítulo 3</h3>
+    <h4>Subtítulo 4</h4>
+    <h5>Subtítulo 5</h5>
+    <h6>Subtítulo 6</h6>
+
+    <section
+        style="background-color: beige; padding: 20px; margin: 0px; gap: 20px; display: flex; flex-direction: column;">
+        <!-- padding: 1°=top (topo), 2°=right (direita), 3°=bottom (em baixo), 4°=left (esquerda) -->
+        <div style="background-color: #ffa07a; padding: 20px;">
+            <h2>Parágrafo 1</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                In quae quod sunt nostrum unde, officia aliquam quibusdam.
+                Nobis libero expedita, quidem excepturi rerum sapiente eius possimus voluptas fuga voluptatem fugiat.
+            </p>
+        </div>
+
+        <div style="display: flex; gap: 20px; padding: 20px; background-color: red;">
+
+            <div style="background-color: #ffa07a; padding: 20px;">
+                <h2>Parágrafo 2</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Deleniti, inventore numquam. Qui, laborum aliquid veritatis sequi molestiae quam culpa et ut optio
+                    labore!
+                    <strong>sapiente natus fugit</strong> Obcaecati quibusdam consectetur doloremque mollitia molestiae
+                    ea.
+                </p>
+            </div>
+
+            <div style="background-color: #ffa07a; padding: 20px;">
+                <h2>Parágrafo 3</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Deleniti, inventore numquam. Qui, laborum aliquid veritatis sequi molestiae quam culpa et ut optio
+                    labore!
+                    <strong>sapiente natus fugit</strong> Obcaecati quibusdam consectetur doloremque mollitia molestiae
+                    ea.
+                </p>
+            </div>
+
+            <div style="background-color: #ffa07a; padding: 20px;">
+                <h2>Parágrafo 4</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Deleniti, inventore numquam. Qui, laborum aliquid veritatis sequi molestiae quam culpa et ut optio
+                    labore!
+                    <strong>sapiente natus fugit</strong> Obcaecati quibusdam consectetur doloremque mollitia molestiae
+                    ea.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <h2>Minhas Stacks</h2>
+
+    <ol>
+        <li>Dart</li>
+        <li>C# Net</li>
+        <li>JAva</li>
+        <li>JAvascript</li>
+        <li>PHP</li>
+    </ol>
+
+    <a href="malito:biancasilveriapaivarg@gmail.com">biancasilveriapaivarg@gmail.com</a>
+
+    <img width="100" src="" />
+
+</body>
+
+</html>
